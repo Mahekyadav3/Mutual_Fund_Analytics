@@ -1,0 +1,11 @@
+# Data Quality Summary
+
+As part of the data collection and exploration phase, all 10 provided CSV datasets were successfully loaded using Pandas. Each dataset was examined using the `.shape`, `.dtypes`, and `.head()` functions to understand its structure, data types, and sample records.
+
+The Fund Master dataset was explored to identify the available fund houses, categories, sub-categories, and risk grades. This helped in understanding the overall structure of the mutual fund data.
+
+The AMFI scheme codes from the Fund Master dataset were validated against the NAV History dataset. The validation confirmed that every scheme in the Fund Master dataset had a corresponding NAV history, indicating that the datasets were consistent and could be linked without any missing scheme codes.
+
+Live NAV data was successfully fetched from the MFAPI for the specified mutual fund scheme and saved as a CSV file. NAV data for the five required mutual fund schemes was also retrieved successfully.
+
+Overall, the datasets were found to be well-structured and suitable for further analysis. No major issues affecting data usability were observed during the initial exploration, providing a reliable foundation for the next stages of the project.
